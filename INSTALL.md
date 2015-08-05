@@ -12,10 +12,13 @@ If you're looking to build your own community calendar using Calagator, follow t
 
 ### Getting Started
 
-First, install the `calagator` gem:
+First, create dummy host application from the DEVELOPMENT.md to have the calagator gem locally.
+Then inside the host run:
 
-    gem install calagator --pre
-    
+    rake build
+    gem install pkg/calagator-1.0.0.rc2.gem
+
+
 You can then use the `calagator` command to generate a new Rails application with Calagator installed:
 
     calagator new my_great_calendar
